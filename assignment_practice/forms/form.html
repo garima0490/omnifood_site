@@ -1,31 +1,28 @@
 <html>
   <head>
     <title>
-            Submission Form
+            Signup Form
     </title>
     <link rel="stylesheet" href="form.css" type="text/css">
   </head>
   <body>
-    <form name="signupForm" onsubmit="return(validateForm());"> 
-      <label for="name"> Name:</label>
-      <input type="text" id="name" name="name" ><br><br>
-      <label for="phone"> Phone:</label>
-      <input type="text" id="phone" name="phone" ><br><br>
-      <label for="email"> Email:</label>
-      <input type="text" id="email" name="email" ><br><br>
-      
-      <select name = "source">
-        <option value = "-1" selected>[How did you get to know about us?]</option>
-        <option value = "1">News Board</option>
-        <option value = "2">Seminars</option>
-        <option value = "3">Magazine</option>
-        <option value = "4">Friends</option>
-        <option value = "5">Other</option>
-     </select><br><br>
-     <input type="submit" value="Submit">
-    </form>
-            
+    <div class="form">
+      <p >Signup Now For Updates</p>
+      <form name="signupForm" method="POST"  onsubmit="return(displayAfterValidate());"> 
+        <label for="name"> <ion-icon name="contact"></ion-icon></label>
+        <input type="text" id="name" name="name" placeholder="Name" ><br><br>
+
+        <label for="phone"> <ion-icon name="call"></ion-icon></label>
+        <input type="text" id="phone" name="phone" placeholder="Phone"><br><br>
+
+        <label for="email"> <ion-icon name="mail"></ion-icon></label>
+        <input type="text" id="email" name="email" placeholder="Email" ><br><br>
+
+        <input id ="signup-btn" type="submit" value="Signup">
+      </form>
+    </div>         
     <script src="form.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     </body>
     
 </html>
