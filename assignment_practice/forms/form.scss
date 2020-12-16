@@ -1,8 +1,17 @@
+@mixin inp-box(){
+  height : 5%;
+  width: 60%;
+  padding-left: 4px;
+  border:none;
+  font-size: 115%;
+  border-bottom: 1px solid rgba(145, 135, 135, 0.671);
+  color:rgb(59, 56, 56);
+}
+
 html{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 10;
-  text-rendering: optimizeLegibility;
 }
 
 * {
@@ -17,44 +26,44 @@ html{
   text-align: center;
   max-width: 30%;
   background-color: rgba(196, 128, 196, 0.575);
-  & ion-icon{
-    font-size: 180%;
-    color:rgb(39, 36, 36);
-    margin-top: 13px;
-    margin-right: 4px;
-  }
+
   & p{
     font-size: 140%;
     margin-top: 15px;
     margin-bottom: 15px;
   }
 
-}
-
-
-::placeholder{
-  color:rgb(173, 165, 165);
-  padding-left: 3px;
-}
-#name,#phone,#email{
-  height : 5%;
-  width: 60%;
-  padding-left: 4px;
-  border:none;
-  font-size: 115%;
-  border-bottom: 1px solid rgba(145, 135, 135, 0.671);
-  color:rgb(59, 56, 56);
-}
-#signup-btn{
-  margin: 16px 0;
-  margin-bottom: 25px;
-  font-size: 180%;
-  padding: 8px 16px;
-  border: 2px solid black;
-  border-radius:22px;
-  transition: background-color 0.5s color 0.5s;
-  &:hover{
-    background-color: black;
-    color:white;
+  & ion-icon{
+    font-size: 180%;
+    color:rgb(39, 36, 36);
+    margin-top: 13px;
+    margin-right: 4px;
   }
+  
+  & #name, #phone,#email{
+    @include inp-box();
+  }
+
+  #signup-btn{
+    margin: 16px 0;
+    margin-bottom: 25px;
+    font-size: 180%;
+    padding: 8px 16px;
+    border: 2px solid black;
+    border-radius:22px;
+    transition: background-color 0.5s color 0.5s;
+    &:hover{
+      background-color: black;
+      color:white;
+    }
+  }
+
+  &::placeholder{
+    color:rgb(173, 165, 165);
+    padding-left: 3px;
+  }
+
 }
+
+
+

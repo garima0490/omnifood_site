@@ -23,7 +23,7 @@ function displayAfterValidate() {
   var email=document.signupForm.email.value;
   var phone=document.signupForm.phone.value;
   
-  document.write(`<h1>Thanks for signing up ${name.fontcolor("blue")}</h1><br><h2>Following is the information associated with your account : </h2> <br>`);
+  document.write(`<br><h1>Thanks for signing up ${name.fontcolor("blue")}</h1><br><h2>Following is the information associated with your account : </h2> <br>`);
   document.write(`<h3>Phone :  ${phone.fontcolor("blue")}<br> Email : ${email.fontcolor("blue")}</h3>`); 
   
   return true;

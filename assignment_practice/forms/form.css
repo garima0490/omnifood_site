@@ -2,7 +2,6 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 10;
-  text-rendering: optimizeLegibility;
 }
 
 * {
@@ -20,6 +19,12 @@ html {
   background-color: rgba(196, 128, 196, 0.575);
 }
 
+.form p {
+  font-size: 140%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .form ion-icon {
   font-size: 180%;
   color: #272424;
@@ -27,33 +32,7 @@ html {
   margin-right: 4px;
 }
 
-.form p {
-  font-size: 140%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-::-webkit-input-placeholder {
-  color: #ada5a5;
-  padding-left: 3px;
-}
-
-:-ms-input-placeholder {
-  color: #ada5a5;
-  padding-left: 3px;
-}
-
-::-ms-input-placeholder {
-  color: #ada5a5;
-  padding-left: 3px;
-}
-
-::placeholder {
-  color: #ada5a5;
-  padding-left: 3px;
-}
-
-#name, #phone, #email {
+.form #name, .form #phone, .form #email {
   height: 5%;
   width: 60%;
   padding-left: 4px;
@@ -63,7 +42,7 @@ html {
   color: #3b3838;
 }
 
-#signup-btn {
+.form #signup-btn {
   margin: 16px 0;
   margin-bottom: 25px;
   font-size: 180%;
@@ -74,8 +53,28 @@ html {
   transition: background-color 0.5s color 0.5s;
 }
 
-#signup-btn:hover {
+.form #signup-btn:hover {
   background-color: black;
   color: white;
+}
+
+.form::-webkit-input-placeholder {
+  color: #ada5a5;
+  padding-left: 3px;
+}
+
+.form:-ms-input-placeholder {
+  color: #ada5a5;
+  padding-left: 3px;
+}
+
+.form::-ms-input-placeholder {
+  color: #ada5a5;
+  padding-left: 3px;
+}
+
+.form::placeholder {
+  color: #ada5a5;
+  padding-left: 3px;
 }
 /*# sourceMappingURL=form.css.map */
